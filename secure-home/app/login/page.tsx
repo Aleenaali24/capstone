@@ -52,9 +52,14 @@ export default function LoginPage() {
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <Link href="/listings" passHref>
+                    <Link href="/manager" passHref>
                       <Button asChild className="w-24 bg-blue-700 hover:bg-blue-800">
-                      <span>Login</span>
+                      <span>Manager Login</span>
+                      </Button>
+                    </Link>
+                    <Link href="/tenant" passHref>
+                      <Button asChild className="w-24 bg-blue-700 hover:bg-blue-800">
+                      <span>Tenant Login</span>
                       </Button>
                     </Link>
                     <div className="text-sm leading-6">

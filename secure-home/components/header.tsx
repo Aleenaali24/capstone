@@ -11,7 +11,7 @@ export default function Header({ showUsername = false }: HeaderProps) {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/home" className="text-2xl font-script text-blue-700">
+            <Link href="/" className="text-2xl font-script text-blue-700">
               SecureHome
             </Link>
           </div>

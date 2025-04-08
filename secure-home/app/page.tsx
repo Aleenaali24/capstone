@@ -4,6 +4,7 @@ import { Search } from "lucide-react"
 import Image from "next/image"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -24,8 +25,16 @@ export default function HomePage() {
             <div className="relative">
               <Input type="text" placeholder="Search" className="w-full pr-10" />
               <div className="absolute inset-y-0 right-0 flex items-center pr-3">
-                <Button size="sm" variant="ghost" className="h-8 w-8 p-0 bg-blue-700">
+                
+                <Button
+                  asChild
+                  size="sm"
+                  variant="ghost"
+                  className="h-8 w-8 p-0 bg-blue-700"
+                >
+                  <Link href="/listings">
                   <Search className="h-4 w-4 text-white" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -37,7 +46,7 @@ export default function HomePage() {
               <div className="flex space-x-4 overflow-x-auto pb-4">
                 <div className="min-w-[250px] rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="/house1.jpg"
+                    src="/house1.jpeg"
                     alt="House"
                     width={250}
                     height={180}
@@ -46,7 +55,7 @@ export default function HomePage() {
                 </div>
                 <div className="min-w-[250px] rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="/house2.jpg"
+                    src="/house2.jpeg"
                     alt="House"
                     width={250}
                     height={180}
