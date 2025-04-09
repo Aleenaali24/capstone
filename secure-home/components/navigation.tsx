@@ -9,16 +9,16 @@ export default function Navigation() {
       <Link href="/listings" className="text-sm font-medium text-gray-700 hover:text-blue-700">
         Active Listings
       </Link>
-      <Link href="/active-contracts" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+      <Link href="/manager/active-contracts" className="text-sm font-medium text-gray-700 hover:text-blue-700">
         Active Contracts
       </Link>
-      <Link href="/expired-contracts" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+      <Link href="/manager/expired-contracts" className="text-sm font-medium text-gray-700 hover:text-blue-700">
         Expired Contracts
       </Link>
-      <Link href="/create-contract" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+      <Link href="/manager/create-contract" className="text-sm font-medium text-gray-700 hover:text-blue-700">
         Create new Contract
       </Link>
-      <Link href="/add-listing" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+      <Link href="/manager/add-listing" className="text-sm font-medium text-gray-700 hover:text-blue-700">
         Add new Listing
       </Link>
     </nav>
